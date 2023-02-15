@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-white: #f4f2f2;
+  --clr-verdigris: #48a9a6;
+  --clr-tan: #d4b483;
+  --clr-fuzzy: #c1666b;
+  --clr-black: #262525;
+  --dark-pastel-green: #20bf55;
+  --clr-blue: #0b4f6c;
+  --clr-cyan: #01baef;
+  --clr-royal-blue-dark: #03256c;
+  --clr-denim-blue: #2541b2;
+  --clr-blue: #1768ac;
+  --clr-green: #188353;
+  --box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ); */
+  background-image: url(/images/24297\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* container */
+.container {
+  width: 30rem;
+  background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+h1 {
+  color: aliceblue;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--dark-pastel-green);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.details {
+  color: #2541b2;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  margin: 1rem auto;
+}
+
+button {
+  border: none;
+  padding: 5px 10px;
+  background-color: #1768ac;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #097bd9;
+  transition: all 0.3s;
+}
+
+button:hover > i {
+  transition: all 1s;
+  transform: rotate(360deg);
+}
+
+select,
+option {
+  cursor: pointer;
+}
+
+input {
+  text-align: right;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 0.65rem 8px 0.5rem 2rem;
+}
+
+/* arrow remove */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
